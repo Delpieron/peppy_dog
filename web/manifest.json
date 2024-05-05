@@ -1,0 +1,54 @@
+{
+  "name": "peppy_dog",
+  "short_name": "peppy_dog",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0175C2",
+  "theme_color": "#0175C2",
+  "description": "Peppy Dog - Nasze gryzaki odzwierciedlają i pomagają dodatkowo zacieśniać tę głęboką więź, która towarzyszy ludziom i ich psom od tysięcy lat. W Peppy Dog wierzymy, że psy są nie tylko zwierzętami domowymi, ale pełnoprawnymi członkami rodziny",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "author": "Petmex",
+  "keywords": [
+    "Champer",
+    "Champerpet",
+    "Petmex",
+    "Peppy Dog",
+    "Peppy",
+    "dog",
+    "gryzaki",
+    "gryzaki dla psów",
+    "pet",
+    "petcare",
+    "pet care",
+    "zadbany pies",
+    "care",
+    "pet diet",
+    "psia dieta",
+    "jedzenie dla psa"
+  ],
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
