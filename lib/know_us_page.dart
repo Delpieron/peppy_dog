@@ -8,18 +8,18 @@ class KnowUsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
     return SizedBox(
-      height: size.height,
+      height: size.height * 1.1,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+            padding: const EdgeInsets.only(left: 24,right: 24, top: 28,bottom: 10),
             child: Image.asset(
               // fit: BoxFit.contain,
               gaplessPlayback: true,
               'assets/know_us/pd_001.png',
               // height: MediaQuery.sizeOf(context).height * .1,
-              width: MediaQuery.sizeOf(context).width * 8,
+              width: MediaQuery.sizeOf(context).width * 7,
             ),
           ),
           _Text(
@@ -67,18 +67,20 @@ class _Text extends StatelessWidget {
 
   final String content;
   final String imageName;
-final EdgeInsets? padding;
-  @override
+  final EdgeInsets? padding;
 
+  @override
   Widget build(BuildContext context) {
     return Expanded(
+      // flex: imageName == 'title1' ? 2: 1,
       child: Padding(
-        padding: padding ?? const EdgeInsets.symmetric(horizontal: 36),
+        padding: padding ?? const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(
               child: Image.asset(
-                fit: BoxFit.contain,
+                fit: BoxFit.fitWidth,
                 gaplessPlayback: true,
                 'assets/know_us/$imageName.png',
                 // height: MediaQuery.sizeOf(context).height * 3,
@@ -94,8 +96,8 @@ final EdgeInsets? padding;
                     color: Colors.black,
                   ),
                   textAlign: TextAlign.center,
-                  presetFontSizes: const [25,23,20,18,16,9],
-                  // minFontSize: 5,
+                  // presetFontSizes: const [25, 10],
+                  minFontSize: 11,
                   // maxFontSize: 35,
                   // stepGranularity: 1,
                 ),

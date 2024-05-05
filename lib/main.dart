@@ -20,24 +20,24 @@ class MyApp extends StatelessWidget {
       theme: getThemeBySize(context),
       home: const Scaffold(
           body: DecoratedBox(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/home_page/pd_009_1.png"),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: SingleChildScrollView(
-                    primary: true,
-                    child: Column(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/home_page/pd_009_1.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: SingleChildScrollView(
+          primary: true,
+          child: Column(
             children: [
-              HomePage(),KnowUsPage(),ProductsPage(),
+              HomePage(), KnowUsPage(), ProductsPage(),
               // Expanded(child: HomePage()),
               // Expanded(child: KnowUsPage()),
               // Expanded(child: ProductsPage()),
             ],
-                    ),
-                  ),
-          )),
+          ),
+        ),
+      )),
     );
   }
 
