@@ -10,12 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  collection: ^1.17.1
-  fast_immutable_collections: ^10.2.2
-  comprehensive_utils: ^0.6.1
   flutter_svg: ^2.0.9
-  responsive_framework: ^1.4.0
   auto_size_text: ^3.0.0
 
 dev_dependencies:

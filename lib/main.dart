@@ -18,26 +18,46 @@ class MyApp extends StatelessWidget {
       title: 'Peppy Dog',
       debugShowCheckedModeBanner: false,
       theme: getThemeBySize(context),
-      home: const Scaffold(
-          body: DecoratedBox(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/home_page/pd_009_1.png"),
-            fit: BoxFit.cover,
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/home_page/pd_009_1.webp"),
+              fit: BoxFit.cover,
+              scale: 2,
+              repeat: ImageRepeat.repeatY,
+            ),
+          ),
+          child: SingleChildScrollView(
+            primary: true,
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/home_page/pd_009_1.webp"),
+                  fit: BoxFit.fill,
+                  scale: 2,
+                  repeat: ImageRepeat.repeatY,
+                ),
+              ),
+              child: Column(
+                children: [
+                  const HomePage(),
+                  const KnowUsPage(),
+                  Container(
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/home_page/pd_009_1.webp"),
+                          fit: BoxFit.cover,
+                          scale: 2,
+                          repeat: ImageRepeat.repeatY,
+                        ),
+                      ),child: const ProductsPage()),
+                ],
+              ),
+            ),
           ),
         ),
-        child: SingleChildScrollView(
-          primary: true,
-          child: Column(
-            children: [
-              HomePage(), KnowUsPage(), ProductsPage(),
-              // Expanded(child: HomePage()),
-              // Expanded(child: KnowUsPage()),
-              // Expanded(child: ProductsPage()),
-            ],
-          ),
-        ),
-      )),
+      ),
     );
   }
 

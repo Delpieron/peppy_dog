@@ -43,7 +43,7 @@ class _HomePage extends StatelessWidget {
           child: Image.asset(
             fit: BoxFit.fill,
             gaplessPlayback: true,
-            'assets/home_page/pd_009_1.png',
+            'assets/home_page/pd_009_1.webp',
             height: MediaQuery.sizeOf(context).height,
             width: MediaQuery.sizeOf(context).width,
           ),
@@ -53,7 +53,7 @@ class _HomePage extends StatelessWidget {
           child: Image.asset(
             fit: BoxFit.fill,
             gaplessPlayback: true,
-            'assets/home_page/pd_009_1.png',
+            'assets/home_page/pd_009_1.webp',
             height: MediaQuery.sizeOf(context).height,
             width: MediaQuery.sizeOf(context).width,
           ),
@@ -67,7 +67,7 @@ class _HomePage extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 50, top: 28),
                 child: Image.asset(
                   gaplessPlayback: true,
-                  'assets/home_page/logo.png',
+                  'assets/home_page/logo.webp',
                   height: MediaQuery.sizeOf(context).height * .15,
                   // width: MediaQuery.sizeOf(context).width * .5,
                 ),
@@ -90,7 +90,7 @@ class _HomePage extends StatelessWidget {
                             Image.asset(
                               // fit: BoxFit.cover,
                               gaplessPlayback: true,
-                              'assets/home_page/lewe_2.png',
+                              'assets/home_page/lewe_2.webp',
                               height: MediaQuery.sizeOf(context).height * .4,
                               // width: MediaQuery.sizeOf(context).width * .5,
                             ),
@@ -98,7 +98,7 @@ class _HomePage extends StatelessWidget {
                             Image.asset(
                               // fit: BoxFit.cover,
                               gaplessPlayback: true,
-                              'assets/home_page/lewe_1.png',
+                              'assets/home_page/lewe_1.webp',
                               height: MediaQuery.sizeOf(context).height * .4,
                               // width: MediaQuery.sizeOf(context).width * .3,
                             ),
@@ -112,7 +112,7 @@ class _HomePage extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Image.asset(
                           gaplessPlayback: true,
-                          'assets/home_page/$centerImageName.png',
+                          'assets/home_page/$centerImageName.webp',
                           // height: MediaQuery.sizeOf(context).height,
                           // width: MediaQuery.sizeOf(context).width * .7,
                         ),
@@ -125,7 +125,7 @@ class _HomePage extends StatelessWidget {
                         child: Image.asset(
                           // fit: BoxFit.cover,
                           gaplessPlayback: true,
-                          'assets/home_page/prawe.png',
+                          'assets/home_page/prawe.webp',
                           height: MediaQuery.sizeOf(context).height * .5,
                           // width: MediaQuery.sizeOf(context).width * .2,
                         ),
@@ -149,15 +149,20 @@ class _HomePageM extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 18.0),
-          child: Image.asset(
-            fit: BoxFit.fill,
-            gaplessPlayback: true,
-            'assets/home_page/pd_009_1.png',
-            // height: MediaQuery.sizeOf(context).height * 3,
-            width: MediaQuery.sizeOf(context).width,
-          ),
+        // SvgPicture.asset(
+        //     'assets/home_page/pd_009_1.webp',
+        //     semanticsLabel: 'Acme Logo',
+        //   height: 200,
+        //   width: 200,
+        // fit: BoxFit.fill,
+        //
+        // ),
+        Image.asset(
+          fit: BoxFit.fill,
+          gaplessPlayback: true,
+          'assets/home_page/pd_009_1.webp',
+          // height: MediaQuery.sizeOf(context).height * 3,
+          width: MediaQuery.sizeOf(context).width,
         ),
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -167,7 +172,7 @@ class _HomePageM extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 28),
                 child: Image.asset(
                   gaplessPlayback: true,
-                  'assets/home_page/logo.png',
+                  'assets/home_page/logo.webp',
                   height: MediaQuery.sizeOf(context).height * .1,
                   width: MediaQuery.sizeOf(context).width * .5,
                 ),
@@ -188,14 +193,14 @@ class _HomePageM extends StatelessWidget {
                           Image.asset(
                             // fit: BoxFit.cover,
                             gaplessPlayback: true,
-                            'assets/home_page/lewe_2.png',
+                            'assets/home_page/lewe_2.webp',
                             height: MediaQuery.sizeOf(context).height * .3,
                             width: MediaQuery.sizeOf(context).width * .34,
                           ),
                           Image.asset(
                             // fit: BoxFit.cover,
                             gaplessPlayback: true,
-                            'assets/home_page/lewe_1.png',
+                            'assets/home_page/lewe_1.webp',
                             height: MediaQuery.sizeOf(context).height * .3,
                             width: MediaQuery.sizeOf(context).width * .34,
                           ),
@@ -209,7 +214,7 @@ class _HomePageM extends StatelessWidget {
                       child: Image.asset(
                         // fit: BoxFit.cover,
                         gaplessPlayback: true,
-                        'assets/home_page/prawe.png',
+                        'assets/home_page/prawe.webp',
                         height: MediaQuery.sizeOf(context).height * .3,
                         width: MediaQuery.sizeOf(context).width * .3,
                       ),
@@ -222,7 +227,7 @@ class _HomePageM extends StatelessWidget {
               child: Image.asset(
                 gaplessPlayback: true,
                 fit: BoxFit.fill,
-                'assets/home_page/pd_008.png',
+                'assets/home_page/pd_008.webp',
                 // height: MediaQuery.sizeOf(context).height * .5,
                 width: MediaQuery.sizeOf(context).width * 2,
               ),
@@ -245,7 +250,7 @@ class _Item extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       gaplessPlayback: true,
-      'assets/home_page/$imageName.png',
+      'assets/home_page/$imageName.webp',
       height: MediaQuery.sizeOf(context).height,
       width: MediaQuery.sizeOf(context).width * .7,
     );

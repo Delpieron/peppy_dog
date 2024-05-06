@@ -8,7 +8,7 @@ class ProductsPage extends StatelessWidget {
     return Image.asset(
       // fit: BoxFit.cover,
       gaplessPlayback: true,
-      'assets/products/pd_011.png',
+      'assets/products/pd_011.webp',
       // height: MediaQuery.sizeOf(context).height,
       // width: MediaQuery.sizeOf(context).width,
     );
